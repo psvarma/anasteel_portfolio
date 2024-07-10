@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+#container{
+    width:100%;
+    height: 100vh;
+    position: relative;
+}
+/* Navigation */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 8%;
+    padding-top: 15px;
+}
+.logo{
+    width:75px;
+}
+.listItems{
+    list-style: none;
+    display:inline;
+    margin: 0 20px;
+}
+.links{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+.links:hover{
+    text-decoration: underline;
+    color: #b44df2;
+}
+
+/* Home Section */
+#home {
+}
+.home-content{
+    margin: 13% 0px 0px 8%;
+}
+#username {
+    font-family: "Roboto Serif", serif;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+#user-details {
+    line-height: 1.5;
+}
+#lname {
+    color: #b44df2;
+    font-family: "Roboto Serif", serif;
+}
+#download{
+    font-family: "Roboto Serif", serif;
+    background: black;
+    color:white;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+}
+#download:hover{
+    background: #b44df2;
+}
+.home-image{
+    position: absolute;
+    width:45%;
+    height: 75%;
+    right:30px;
+    bottom:0;    
+}
+.group1{
+    position: absolute;
+    height: 100%;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    transition: bottom 2s, left 1s;
+}
+.home-image:hover #shape{
+   bottom:70px;
+}
+.home-image:hover #girl{
+    left:40%;
+ }
+
+/* About Section */
+#about{
+    margin:20% 8% 0 8%;
+}
+.section-head {
+    text-align: center;
+}
+.main-head{
+    font-family: "Roboto Serif", serif;
+    font-size: 30px;
+}
+.sub-head{
+    font-family: "Roboto Serif", serif;
+    font-size: 20px;
+    color: green;
+}
+.about-body {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    align-items: center;
+}
+.about-img > img {
+    width:100%;
+}
+.about-content {
+    font-size: 18px;
+    text-align: justify;
+}
+.informations {
+    margin-top: 1.3rem;
+}
+.info-box{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.info-box > span {
+    margin-left:1rem;
+}
+
+/* Skill */
+#skill {
+    margin:8% 8% 0 8%;
+}
+.skill-contents{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:2rem;
+    margin-top: 20px;
+    align-items: center;
+}
+.mySkill{
+    width:100%
+}
+.bars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+}
+.bar-head, .bar-percent {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.base-bar{
+    background-color: black;
+    height: 0.5rem;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    bottom:0;
+}
+.html-bar{
+    background-color: orange;
+    width: 89%;
+}
+.css-bar{
+    background-color: orange;
+    width: 82%;
+}
+.js-bar{
+    background-color: orange;
+    width: 79%;
+}
+.react-bar{
+    background-color: orange;
+    width: 75%;
+}
+
+/* Contact Section */
+#contact{
+    margin: 8%;
+}
+.icon-collections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:5%;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right, yellow, red, blue);
+}
+.brands{
+    color: black;
+    font-size: 30px;
+}
+.icon:hover .brands {
+    color: white;
+    animation: rotate 3s;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{transform: rotate(30deg);}
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+footer {
+    margin: 8%;
+}
+#copyright {
+    text-align: center;
+    font-weight: 600;
+}
+.up-arrow {
+    float: right;
+    margin: -40px 30px 30px 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scroll{
+    width:10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 10px;
+}
